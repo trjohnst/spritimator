@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <link type="text/css" href="assets/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+
+        <img id="sheet" src="assets/default.png" />
+        <br />
+        <br />
+        <div id="anim-cropper">
+            <img id="anim" src="assets/default.png"/>
+        </div>
+        <br />
+        <br />
+        <div id="form-cont">
+            <form>
+                <div class="form-el">
+                    <label>File Name</label>
+                    <input id="file" type="text" value="default.png" />
+                </div><div class="form-el">
+                    <label>Width</label>
+                    <input id="width" type="text" value="50" />&nbsp;pixels
+                </div><div class="form-el">
+                    <label>Height</label>
+                    <input id="height" type="text" value="72" />&nbsp;pixels
+                </div><div class="form-el">
+                    <label>Delay</label>
+                    <input id="delay" type="text" value="150"/>&nbsp;ms
+                </div><div class="form-el">
+                    <label>Keyframes</label>
+                    <input id="frames" type="text" value="10"/>&nbsp;frames
+                </div>
+            </form>
+            <button id="animate">Animate</button>
+            <br />
+            <button id="step">Step Forward</button>
+            <br />
+            <button id="pause">Pause</button>
+            <br />
+            <button id="stop">Stop</button>
+            <br />
+            <br />
+            <br />
+            <h1 align="center">IMPORTANT!</h1>
+            <p align="center">To start put your image inside the assets folder and rename the 'File Name' field to the name of your image with the file extension (.png, .jpg, etc)</p>
+        </div>
+
+
+        <script type="text/javascript" src="assets/jquery.js"></script>
+        <script type="text/javascript" src="assets/app.js"></script>
+    </body>
+</html>
