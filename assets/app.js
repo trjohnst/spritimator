@@ -50,6 +50,11 @@ function animate() {
     $('#sheet').attr('src', imgloc);
     $('#anim').attr('src', imgloc);
 
+    //adjust animation cropper width
+    $('#anim-cropper').css('width', width + "px")
+                    .css('height', height + "px")
+                    .css('margin-left', -width/2 + "px");
+
     //run animation
     timeout = setTimeout(animator, delay);
 }
@@ -58,7 +63,7 @@ function pause() {
 }
 function stop() {
     pause();
-    $('#anim').css('margin-left', 0);
+    $('#anim').css('margin-left', "0px");
 }
 
 function animator() {
